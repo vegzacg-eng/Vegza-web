@@ -7,8 +7,13 @@
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:Arial,sans-serif;
 background:#02152b;
 color:white;
@@ -29,6 +34,7 @@ background-position:center;
 
 .container{
 max-width:1100px;
+width:100%;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:50px;
@@ -42,7 +48,7 @@ margin-bottom:20px;
 
 h1{
 font-size:60px;
-margin:0 0 20px;
+margin-bottom:20px;
 }
 
 h1 span{
@@ -66,6 +72,7 @@ padding:15px 30px;
 border-radius:10px;
 text-decoration:none;
 font-weight:bold;
+display:inline-block;
 }
 
 .primary{
@@ -84,9 +91,17 @@ padding:40px;
 border-radius:20px;
 }
 
+.card h2{
+margin-bottom:20px;
+}
+
 .service{
 padding:15px 0;
 border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.service:last-child{
+border:none;
 }
 
 @media(max-width:900px){
@@ -111,6 +126,7 @@ justify-content:center;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -121,7 +137,7 @@ justify-content:center;
 
 <div>
 
-<img src="logo-vegza.png" class="logo">
+<img src="logo-vegza.png" class="logo" alt="VEGZA Logo">
 
 <h1>VEGZA <span>Construction</span></h1>
 
@@ -130,8 +146,15 @@ General Contractor & Plumbing Contractor serving Miami and all Florida with prem
 </p>
 
 <div class="buttons">
-<a href="tel:7863258154" class="btn primary">Call Now</a>
-<a href="https://wa.me/17863258154" class="btn secondary">WhatsApp</a>
+
+<a href="tel:7863258154" class="btn primary">
+Call Now
+</a>
+
+<a href="https://wa.me/17863258154" class="btn secondary">
+WhatsApp
+</a>
+
 </div>
 
 </div>
